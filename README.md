@@ -6,4 +6,4 @@ contact information from alumni along with their areas of interest in volunteeri
 areas of interest include mentoring, mock interviews, alumni panels and resume review 
 sessions. In addition to providing functionality for the alumni to submit this information, 
 it will also require a web front-end for the faculty to query information on the alumni 
-interest areas and contact information. _
+interest areas and contact information._
