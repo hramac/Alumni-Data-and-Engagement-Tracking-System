@@ -24,8 +24,8 @@
   
    if($pwdcheck == true)
    {
-      #header("Location: ../New/index.php");
-      header("Location: https://www.google.com");
+      header("Location: ../New/index.php");
+      #header("Location: https://www.google.com");
       exit();
    }
  }

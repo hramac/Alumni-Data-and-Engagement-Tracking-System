@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
 </head>
 <body>
+
+<h1>Sign Up</h1>
     <form action= "signup.db.php" method = "POST">
         <label>Username :</label><br>
         <input type = "text" name = "uid" required><br><br>
