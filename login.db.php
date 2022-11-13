@@ -15,8 +15,7 @@
    if ($pwdcheck == false)
    
    {
-    
-      echo "Incorrect password";
+          
       header("Location: login.php?error=wrongcredentials");
       
       exit();
@@ -24,8 +23,8 @@
   
    if($pwdcheck == true)
    {
+      
       header("Location: ../New/index.php");
-      #header("Location: https://www.google.com");
       exit();
    }
  }

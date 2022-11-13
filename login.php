@@ -10,6 +10,13 @@
 <body>
 
 <h1>Sign In</h1>
+<?php
+if(isset($_GET['error']))
+{
+    echo " <font color=red><p> Invalid credentials </p> </font>";
+}
+?>
+
 <form action = "login.db.php" method = "POST">
         <table>
             <tr>
