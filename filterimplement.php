@@ -39,6 +39,7 @@
                 <th>Areas of Interest</th>
                 <th>Available day</th>
                 <th>Available time</th>
+                </tr>
         </thead>
         <tbody>
 
@@ -50,10 +51,10 @@
                         <td>".$row["FirstName"]. "</td>
                         <td>". $row["LastName"]."</td>
                         <td>". $row["Program"]."</td>
-                        <td>". $row["FocusArea"]."</td>
                         <td>". $row["gradyear"]."</td>
-                        <td>". $row["Email"]."</td>
                         <td>". $row["phone"]."</td>
+                        <td>". $row["Email"]."</td>
+                        <td>". $row["FocusArea"]."</td>                                            
                         <td>". $row["orgname"]."</td>
                         <td>". $row["title"]."</td>
                         <td>". $row["interest"]."</td>
@@ -63,6 +64,24 @@
                 }
                 ?>
         </tbody>
+
+        <tfoot>
+            <tr>
+            <th>First Name</th>
+                <th>Last Name</th>
+                <th>Program</th>
+                <th>Graduation Year</th>
+                <th>Contact number</th>
+                <th>E-mail</th>
+                <th>Focus Area</th>
+                <th>Organization Name</th>
+                <th>Job Title</th>
+                <th>Areas of Interest</th>
+                <th>Available day</th>
+                <th>Available time</th>
+            </tr>
+        </tfoot>
+
 </table>
 
 
