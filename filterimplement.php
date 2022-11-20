@@ -67,15 +67,15 @@
 
         <tfoot>
             <tr>
-            <th>First Name</th>
-                <th>Last Name</th>
-                <th>Program</th>
-                <th>Graduation Year</th>
-                <th>Contact number</th>
-                <th>E-mail</th>
+            <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
                 <th>Focus Area</th>
-                <th>Organization Name</th>
-                <th>Job Title</th>
+                <th></th>
+                <th></th>
                 <th>Areas of Interest</th>
                 <th>Available day</th>
                 <th>Available time</th>
@@ -95,7 +95,7 @@ $(document).ready(function () {
     $('#example').DataTable({
         initComplete: function () {
             this.api()
-                .columns()
+                .columns([6,9,10,11])
                 .every(function () {
                     var column = this;
                     var select = $('<select><option value=""></option></select>')
@@ -105,6 +105,8 @@ $(document).ready(function () {
  
                             column.search(val ? '^' + val + '$' : '', true, false).draw();
                         });
+
+                        
  
                     column
                         .data()
