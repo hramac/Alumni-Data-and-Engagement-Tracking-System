@@ -794,8 +794,14 @@ if (isset($_GET['success'])) {
                 <div class="form-group">
                     <label for="graduation_year" class="col-sm-3 control-label">Graduation Year</label>
                     <div class="col-sm-9">
-                        <input type="number" min="1990" max="2022" required name="graduation_year" class="form-control"
+                        <input type="number" min="2003" required name="graduation_year" class="form-control"
                             placeholder="YYYY" id="graduation_year" style="height: 50px;" /><br>
+
+                            <script>
+                              const monthControl = document.querySelector('input[type="number"]');
+                              let date = new Date().getFullYear();
+                              monthControl.max = date;
+                            </script>
                     </div>
                 </div>
                 <div class="form-group">
@@ -863,15 +869,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Monday:</td>
                                 <td>
-                                    <input type="checkbox" id="monday_morning" name="monday_morning" value="Monday Morning">
+                                    <input type="checkbox" id="monday_morning" name="daytime[]" value="Monday Morning">
                                     <label for="monday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="monday_afternoon" name="monday_afternoon" value="Monday Afternoon"> 
+                                    <input type="checkbox" id="monday_afternoon" name="daytime[]" value="Monday Afternoon"> 
                                     <label for="monday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="monday_Evening" name="monday_Evening" value="Monday Evening"> 
+                                    <input type="checkbox" id="monday_Evening" name="daytime[]" value="Monday Evening"> 
                                     <label for="monday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -880,15 +886,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Tuesday:</td>
                                 <td>
-                                    <input type="checkbox" id="Tuesday_morning" name="Tuesday_morning" value="Tuesday Morning">
+                                    <input type="checkbox" id="Tuesday_morning" name="daytime[]" value="Tuesday Morning">
                                     <label for="Tuesday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Tuesday_afternoon" name="Tuesday_afternoon" value="Tuesday Afternoon"> 
+                                    <input type="checkbox" id="Tuesday_afternoon" name="daytime[]" value="Tuesday Afternoon"> 
                                     <label for="Tuesday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Tuesday_Evening" name="Tuesday_Evening" value="Tuesday Evening"> 
+                                    <input type="checkbox" id="Tuesday_Evening" name="daytime[]" value="Tuesday Evening"> 
                                     <label for="Tuesday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -898,15 +904,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Wednesday:</td>
                                 <td>
-                                    <input type="checkbox" id="Wednesday_morning" name="Wednesday_morning" value="Wednesday Morning">
+                                    <input type="checkbox" id="Wednesday_morning" name="daytime[]" value="Wednesday Morning">
                                     <label for="Wednesday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Wednesday_afternoon" name="Wednesday_afternoon" value="Wednesday Afternoon"> 
+                                    <input type="checkbox" id="Wednesday_afternoon" name="daytime[]" value="Wednesday Afternoon"> 
                                     <label for="Wednesday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Wednesday_Evening" name="Wednesday_Evening" value="Wednesday Evening"> 
+                                    <input type="checkbox" id="Wednesday_Evening" name="daytime[]" value="Wednesday Evening"> 
                                     <label for="Wednesday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -915,15 +921,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Thursday:</td>
                                 <td>
-                                    <input type="checkbox" id="Thursday_morning" name="Thursday_morning" value="Thursday Morning">
+                                    <input type="checkbox" id="Thursday_morning" name="daytime[]" value="Thursday Morning">
                                     <label for="Thursday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Thursday_afternoon" name="Thursday_afternoon" value="Thursday Afternoon"> 
+                                    <input type="checkbox" id="Thursday_afternoon" name="daytime[]" value="Thursday Afternoon"> 
                                     <label for="Thursday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Thursday_Evening" name="Thursday_Evening" value="Thursday Evening"> 
+                                    <input type="checkbox" id="Thursday_Evening" name="daytime[]" value="Thursday Evening"> 
                                     <label for="Thursday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -932,15 +938,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Friday:</td>
                                 <td>
-                                    <input type="checkbox" id="Friday_morning" name="Friday_morning" value="Friday Morning">
+                                    <input type="checkbox" id="Friday_morning" name="daytime[]" value="Friday Morning">
                                     <label for="Friday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Friday_afternoon" name="Friday_afternoon" value="Friday Afternoon"> 
+                                    <input type="checkbox" id="Friday_afternoon" name="daytime[]" value="Friday Afternoon"> 
                                     <label for="Friday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Friday_Evening" name="Friday_Evening" value="Friday Evening"> 
+                                    <input type="checkbox" id="Friday_Evening" name="daytime[]" value="Friday Evening"> 
                                     <label for="Friday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -949,15 +955,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Saturday:</td>
                                 <td>
-                                    <input type="checkbox" id="Saturday_morning" name="Saturday_morning" value="Saturday Morning">
+                                    <input type="checkbox" id="Saturday_morning" name="daytime[]" value="Saturday Morning">
                                     <label for="Saturday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Saturday_afternoon" name="Saturday_afternoon" value="Saturday Afternoon"> 
+                                    <input type="checkbox" id="Saturday_afternoon" name="daytime[]" value="Saturday Afternoon"> 
                                     <label for="Saturday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Saturday_Evening" name="Saturday_Evening" value="Saturday Evening"> 
+                                    <input type="checkbox" id="Saturday_Evening" name="daytime[]" value="Saturday Evening"> 
                                     <label for="Saturday_Evening">Evening</label>
                                 </td>
                             </tr>
@@ -966,15 +972,15 @@ if (isset($_GET['success'])) {
                             <tr class="tablerows">
                                 <td>Sunday:</td>
                                 <td>
-                                    <input type="checkbox" id="Sunday_morning" name="Sunday_morning" value="Sunday Morning">
+                                    <input type="checkbox" id="Sunday_morning" name="daytime[]" value="Sunday Morning">
                                     <label for="Sunday_morning">Morning</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Sunday_afternoon" name="Sunday_afternoon" value="Sunday Afternoon"> 
+                                    <input type="checkbox" id="Sunday_afternoon" name="daytime[]" value="Sunday Afternoon"> 
                                     <label for="Sunday_afternoon">Afternoon</label>
                                 </td>
                                 <td>
-                                    <input type="checkbox" id="Sunday_Evening" name="Sunday_Evening" value="Sunday Evening"> 
+                                    <input type="checkbox" id="Sunday_Evening" name="daytime[]" value="Sunday Evening"> 
                                     <label for="Sunday_Evening">Evening</label>
                                 </td>
                             </tr>
