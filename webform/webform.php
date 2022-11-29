@@ -1048,7 +1048,7 @@ if (isset($_GET['success'])) {
                     </div>
                 </div><br>
 
-                <div class="form-group">
+<!--                 <div class="form-group">
                     <label for="time" class="col-sm-3 control-label">Time of the day</label>
                     <div class="col-sm-9">
                         <select name="time" required style="height: 50px;">
@@ -1059,7 +1059,7 @@ if (isset($_GET['success'])) {
 
                         </select><br><br>
                     </div>
-                </div>
+                </div> -->
                 <div class="form-group">
                     <div class="col-sm-9 col-sm-offset-3">
                         <br>
